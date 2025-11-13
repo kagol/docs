@@ -45,12 +45,6 @@ jobs:
           # 打印状态便于调试
           git submodule status --recursive
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'pnpm'
-
       - name: Setup pnpm
         uses: pnpm/action-setup@v3
         with:
